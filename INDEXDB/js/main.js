@@ -10,3 +10,10 @@ const proname = document.getElementById("proname");
 const seller = document.getElementById("seller");
 const price = document.getElementById("price");
 
+//BUTTONS TAGS
+
+const btncreate = document.getElementById("btn-create");
+const btnread = document.getElementById("btn-read");
+const btnupdate = document.getElementById("btn-update");
+const btndelete = document.getElementById("btn-delete");
+
