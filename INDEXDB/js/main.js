@@ -1,4 +1,5 @@
-import productdb from "./Module.js";
+
+import productdb,{ bulkcreate} from "./Module.js";
 
 let db = productdb("Productdb", {
     products: `++id, name, seller, price`
@@ -17,3 +18,13 @@ const btnread = document.getElementById("btn-read");
 const btnupdate = document.getElementById("btn-update");
 const btndelete = document.getElementById("btn-delete");
 
+//INSERT EVENTS
+btncreate.onclick=(event)=>{
+let flag = bulkcreate(db.products,{
+    name: proname.value,
+    seller: seller.value,
+    price: price.value
+
+})
+    console.log(flag);
+}
